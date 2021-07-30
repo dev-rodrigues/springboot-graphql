@@ -1,19 +1,19 @@
 scalar LocalDate
 
 type Query {
-    promocoes(dataFilter: LocalDate): [Promotion]
-    produtos(descricaoFilter: String): [Product]
+    promotions(dateFilter: LocalDate): [Promotion]
+    products(descriptionFilter: String): [Product]
 }
 
 type Promotion {
-    descricao: String
-    desconto: Float
-    dataInicial: LocalDate
-    dataFinal: LocalDate
+    description: String
+    discount: Float
+    initialDate: LocalDate
+    finalDate: LocalDate
 }
 
 type Product {
     id: Int
-    descricao: String
-    valor: Float
+    description: String
+    value: Float
 }
